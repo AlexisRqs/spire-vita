@@ -1,4 +1,4 @@
-# Private source publication candidate
+# Source publication status
 
 Base: active development 7e7f12c plus the earlier portable publication pipeline.
 The original working checkout remains unchanged. This curated repository starts
@@ -9,9 +9,9 @@ local APK/resource generation, pinned dependency bootstrap, scoped MIT license
 and third-party notices, build/install/contribution documentation, public and
 optional private checks, publication scanner and source inventory.
 
-Remaining before announcement: physical Vita acceptance of the exact reconstructed
-package, explicit owner decision to open sources, and unauthenticated clone/build
-instructions check after opening. No visibility-changing workflow or automatic
+Public source publication was authorized on 2026-10-29.
+**Tests Vita en attente / Physical Vita validation pending.**
+Physical Vita acceptance of the exact reconstructed package remains pending. No visibility-changing workflow or automatic
 release upload exists. All generated VPKs and resource workspaces remain private.
 The source tree and reachable history must pass tools/check_publication.py.
 

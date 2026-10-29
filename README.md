@@ -2,7 +2,8 @@
 
 Unofficial experimental Android ARMv7 loader/adaptation for PlayStation Vita,
 maintained by AlexisRqs with AI assistance. The original game is not included.
-The repository remains private while preparing source publication.
+**Tests Vita en attente / Physical Vita validation pending.**
+This source-only snapshot is published for review; no validated binary release is provided.
 
 This candidate integrates the latest development snapshot
 `7e7f12c4c7c84ff19dbc8fc5b940e4acba4c51f1` with the portable resource/dependency
