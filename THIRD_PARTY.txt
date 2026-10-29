@@ -1,0 +1,50 @@
+Third-party components — source publication candidate
+
+Original independent contributions: MIT (root LICENSE), subject to LICENSING.md. Third-party components retain their own notices; this does not license any original game code or data.
+
+Debug screen: VitaSDK samples commit fe8fbef570f3280586c0c20157146e3faefb2181, CC0-1.0 per upstream README. The bundled debugScreenFont.c carries its own PSPSDK BSD notice; vendor/debugscreen/PSPSDK-LICENSE is included separately.
+https://github.com/vitasdk/samples
+https://github.com/pspdev/pspsdk
+
+pthread-embedded: supplied by the SDK, commit 11d2e5722d98c86f33c908fc47b2cf6e55205db5. Upstream COPYING, COPYING.LIB and COPYING.vita are retained in vendor/graphics-licenses/pthread-*.txt. The Vita adaptation has an MIT notice; retain the accompanying upstream notices as well. No local library modifications.
+https://github.com/vitasdk/pthread-embedded
+
+vitaGL: 76f43e6fbe1513cee44118da7ff2c16728c4fed2, LGPL-3.0-or-later. Local modifications ARE present: font-atlas updates, unsigned detex masks and DXT upload staging. The complete diff is vendor/graphics-licenses/vitaGL-local.patch. Apply that file once, not alongside its constituent historical patch files. Built hard-float with NO_SPLASHSCREEN=1.
+https://github.com/Rinnegatamante/vitaGL
+
+vitaShaRK: df24065e65098b2d1ac533760109ad4367573f28, LGPL-3.0-or-later; no local source changes.
+https://github.com/Rinnegatamante/vitaShaRK
+
+SceShaccCgExt: d3c83efceedeca3be863d0c1f19bb145daf1685f; upstream LGPL-2.1 notice retained. Built in GNU C11 mode for GCC 15 compatibility; no local source changes.
+https://github.com/bythos14/SceShaccCgExt
+
+math-neon: 0faab814782c071ff4015527f1ca955ab1ccc470, MIT; no local source changes.
+https://github.com/Rinnegatamante/math-neon
+
+taiHEN: 309b3800bcb8ebbd5e4f5e5e920af3da3590b829, MIT notice retained. Header and generated public import stubs only; no taiHEN kernel implementation is built or installed by the preparation tools.
+https://github.com/yifanlu/taiHEN
+
+kubridge: 417ddde9a744eba98d769382c1c1372b8e119139. Import assembly for kuKernelMemProtect and kuKernelFlushCaches, generated with VitaSDK from public NIDs. No kubridge kernel implementation is distributed here.
+https://github.com/bythos14/kubridge
+
+PSVshellPlus: b70f1c7fe78882ff1327d50ccd703b0ea429076e used to verify public NIDs for optional read-only clock queries in src/psvshell_read.S. No PSVshellPlus plugin is included.
+https://github.com/GrapheneCt/PSVshellPlus
+
+detex: host decoder snapshots and clamp table from the pinned vitaGL revision. Harm Hanemaaijer copyright and ISC-style notice retained in vendor/detex. Platform includes adapted for host compilation; unsigned-mask changes applied as recorded in the vitaGL patch.
+stb_dxt: snapshot from the same vitaGL revision; dual public-domain/MIT notice retained in vendor/stb/stb_dxt.h.
+Pillow and texture2ddecoder: host-only preparation dependencies, installed separately; not linked into the Vita executable. See requirements-assets.txt.
+
+STSPSVITA was a reference during exploration of porting approaches. The development records declare no STSPSVITA source import into this Android-loader implementation. This distinction is not a claim of common authorship or endorsement.
+https://github.com/mmrmagno/stspsvita
+
+Slay the Spire and its original game files belong to their respective rights holders. Game binaries, original/converted assets and personal saves are excluded from the source candidate. No game license is granted by this project.
+
+The binary distribution/relinking materials must be reviewed separately before publishing a VPK. Source build instructions, pinned revisions and local library patches are provided; the current preparation does not declare binary distribution compliance complete.
+
+Native streaming audio added after the publication 0.66 baseline: stb_vorbis
+v1.22 at nothings/stb commit 1ee679ca2ef753a528db5ba6801e1067b40481b8,
+MIT license in vendor/stb/LICENSE-MIT.txt; source identity in vendor/stb/SOURCE.json.
+Original audio bridge/mixer, loading subset builder, rotated-text and pinned
+Buffer optimizations are retained from development commit
+7e7f12c4c7c84ff19dbc8fc5b940e4acba4c51f1. Exact game-symbol contracts and hashes
+are compatibility metadata, not bundled game binaries. No game .so is included.

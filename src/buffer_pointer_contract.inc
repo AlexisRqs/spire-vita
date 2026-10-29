@@ -1,0 +1,9 @@
+{"_ZN4java3nio18Buffer$_getPointerEPNS0_6BufferE",0x22ac6e1,36,0x61f9bb9d},
+{"_ZN6System7Runtime15InteropServices14GCHandle$_FreeEPNS1_8GCHandleE",0x1c0911d,16,0xa06e4e87},
+{"_ZN4java3nio13Buffer$_$CtorEPNS0_6BufferES2_",0x22ac579,156,0xccd924c1},
+{"_ZN4java3nio13Buffer$_$CtorEPNS0_6BufferEiiiPN6System6ArrayTIhLi1EEE",0x22ac4dd,156,0x620e07ba},
+{"_ZN4java3nio15Buffer$_disposeEPNS0_6BufferE",0x22ac64f,34,0x6fe2ccf1},
+{"_ZN4java3nio28Buffer$_Object_Finalize_VoidEPNS0_6BufferE",0x22ac615,58,0xc7e28655},
+{"_ZN6System7Runtime15InteropServices34GCHandle$_$S_GetAddrOfPinnedObjectEi",0x1b7aa6d,176,0x16d3dbc3},
+{"_ZN6System7Runtime15InteropServices25GCHandle$_get_IsAllocatedEPNS1_8GCHandleE",0x1c09035,10,0xc1e8b57c},
+{"_ZN6System7Runtime15InteropServices28GCHandle$_AddrOfPinnedObjectEPNS1_8GCHandleE",0x1c09041,176,0xafc0798d}

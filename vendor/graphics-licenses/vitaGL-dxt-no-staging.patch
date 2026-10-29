@@ -1,0 +1,27 @@
+diff --git a/source/utils/gpu_utils.c b/source/utils/gpu_utils.c
+index 6ae72c0..d9220e1 100644
+--- a/source/utils/gpu_utils.c
++++ b/source/utils/gpu_utils.c
+@@ -772,7 +772,12 @@ void gpu_alloc_compressed_texture(int32_t mip_level, uint32_t w, uint32_t h, Sce
+ 				case SCE_GXM_TEXTURE_FORMAT_UBC2_ABGR:
+ 				case SCE_GXM_TEXTURE_FORMAT_UBC3_ABGR:
+ 				case SCE_GXM_TEXTURE_FORMAT_UBC5_GR:
+-					if (aligned_width == w && aligned_height == h && h <= 2048 && w <= 2048) {
++					/* Spire startup uploads before its first swap. Avoid accumulating
++                     * frame-retired staging copies for DXT; CPU swizzle writes
++                     * directly into the final mapped texture allocation. */
++                    if (format != SCE_GXM_TEXTURE_FORMAT_UBC2_ABGR &&
++                        format != SCE_GXM_TEXTURE_FORMAT_UBC3_ABGR &&
++                        aligned_width == w && aligned_height == h && h <= 2048 && w <= 2048) {
+ #ifdef TEXTURE_UPLOADS_SPEEDHACK
+ 						void *mapped_src = data;
+ #else
+@@ -805,7 +810,7 @@ void gpu_alloc_compressed_texture(int32_t mip_level, uint32_t w, uint32_t h, Sce
+ 					}
+ 					break;
+ 				default:
+-					if (aligned_width == w && aligned_height == h && h <= 2048) {
++					if (format != SCE_GXM_TEXTURE_FORMAT_UBC1_ABGR && aligned_width == w && aligned_height == h && h <= 2048) {
+ #ifdef TEXTURE_UPLOADS_SPEEDHACK
+ 						void *mapped_src = data;
+ #else

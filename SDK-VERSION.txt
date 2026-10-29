@@ -1,0 +1,7 @@
+Built at 2026-10-15 04:59:38
+world             vita (float-abi=hard)
+newlib            2e428297c0b6aefd830c5a75a7daa7e774562a42
+pthread-embedded  11d2e5722d98c86f33c908fc47b2cf6e55205db5
+samples           fe8fbef570f3280586c0c20157146e3faefb2181
+vita-headers      e66ebe90b73d1fa4cce005a5b2072cec27322544
+vita-toolchain    008ddc2d7fd4bd16631d1e49cacf308de6f545f1

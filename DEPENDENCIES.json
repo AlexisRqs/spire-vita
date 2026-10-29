@@ -1,0 +1,45 @@
+{
+  "dependencies": [
+    {
+      "name": "vitaGL",
+      "commit": "76f43e6fbe1513cee44118da7ff2c16728c4fed2",
+      "upstream": "https://github.com/Rinnegatamante/vitaGL.git",
+      "modified": true
+    },
+    {
+      "name": "vitaShaRK",
+      "commit": "df24065e65098b2d1ac533760109ad4367573f28",
+      "upstream": "https://github.com/Rinnegatamante/vitaShaRK.git",
+      "modified": false
+    },
+    {
+      "name": "SceShaccCgExt",
+      "commit": "d3c83efceedeca3be863d0c1f19bb145daf1685f",
+      "upstream": "https://github.com/bythos14/SceShaccCgExt.git",
+      "modified": false
+    },
+    {
+      "name": "math-neon",
+      "commit": "0faab814782c071ff4015527f1ca955ab1ccc470",
+      "upstream": "https://github.com/Rinnegatamante/math-neon.git",
+      "modified": false
+    },
+    {
+      "name": "taiHEN",
+      "commit": "309b3800bcb8ebbd5e4f5e5e920af3da3590b829",
+      "upstream": "https://github.com/yifanlu/taiHEN.git",
+      "modified": false
+    },
+    {
+      "name": "kubridge",
+      "commit": "417ddde9a744eba98d769382c1c1372b8e119139",
+      "upstream": "https://github.com/bythos14/kubridge.git",
+      "modified": false
+    }
+  ],
+  "note": "Pinned dependency bootstrap with recorded vitaGL patch; SDK archive is supplied separately. See BUILDING.md.",
+  "font_license": {
+    "url": "https://raw.githubusercontent.com/pspdev/pspsdk/master/LICENSE",
+    "sha256": "2a72b3d563b8e080dd2be9a963f44c8396ca615421833d3cffb6d126101c1c82"
+  }
+}
