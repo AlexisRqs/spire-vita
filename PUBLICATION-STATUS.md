@@ -10,7 +10,7 @@ and third-party notices, build/install/contribution documentation, public and
 optional private checks, publication scanner and source inventory.
 
 Public source publication was authorized on 2026-10-29.
-**Tests Vita en attente / Physical Vita validation pending.**
+**Physical Vita validation pending.**
 Physical Vita acceptance of the exact reconstructed package remains pending. No visibility-changing workflow or automatic
 release upload exists. All generated VPKs and resource workspaces remain private.
 The source tree and reachable history must pass tools/check_publication.py.
